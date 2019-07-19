@@ -1,0 +1,28 @@
+#fp-nav, .fp-slidesNav{
+  // display: none;
+
+  ul {
+
+    li{
+      height: 25px;
+
+      a {
+        span{
+          height: 10px;
+          width: 10px;
+          margin: -6px 0 0 -6px;
+          border-radius: 100%;
+          background: #C7C9D1;
+        }
+        &.active span{
+          height: 10px;
+          width: 10px;
+          margin: -6px 0 0 -6px;
+          border-radius: 100%;
+          background: theme-color('third') !important;
+        }
+
+      }
+    }
+  }
+}

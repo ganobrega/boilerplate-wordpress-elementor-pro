@@ -1,0 +1,84 @@
+{
+  "name": "brunch-on-speed",
+  "description": "Skeleton for Brunch",
+  "private": true,
+  "author": "John Doe",
+  "version": "0.1.51",
+  "repository": "",
+  "scripts": {
+    "start": "LOGGY_STACKS=true brunch watch --server",
+    "build": "brunch build --production",
+    "release": "npx gulp release"
+  },
+  "dependencies": {
+    "bootstrap": "^4",
+    "bootstrap-breakpoints": "^1.0.0",
+    "destyle.css": "^1.0.5",
+    "jquery": "^3",
+    "popper.js": "^1",
+    "responsive-toolkit": "^2.6.3"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.0",
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "^6",
+    "babel-eslint": "^8",
+    "babel-preset-env": "^1",
+    "brunch": "^2",
+    "eslint": "^4",
+    "eslint-config-airbnb-base": "^12",
+    "eslint-config-prettier": "^2",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-prettier": "^2",
+    "gulp": "^4.0.0",
+    "gulp-banner": "^0.1.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-touch": "^1.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.2.0",
+    "pleeease-brunch": "^3",
+    "prettier": "^1",
+    "sass-brunch": "^2",
+    "semver": "^5.6.0",
+    "uglify-js-brunch": "^2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "plugins": [
+      "import",
+      "prettier"
+    ],
+    "env": {
+      "jquery": true,
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      ]
+    }
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

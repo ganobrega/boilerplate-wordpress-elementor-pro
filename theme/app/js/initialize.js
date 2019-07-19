@@ -1,0 +1,2 @@
+// Components
+require('./components/index');
